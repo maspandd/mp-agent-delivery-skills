@@ -1,4 +1,4 @@
-# pandu-agent-skills
+# mp-agent-delivery-skills
 
 Kumpulan skill yang bisa dipakai ulang di Claude.ai, Claude Code, dan agent lain (Codex, Cursor, GitHub Copilot, Gemini CLI).
 
@@ -35,20 +35,20 @@ Alternatif untuk plan Team atau Enterprise: Owner organisasi bisa sync repo ini 
 ## Pasang di Claude Code
 
 ```bash
-claude plugin marketplace add OWNER/pandu-agent-skills
-claude plugin install pandu-skills@pandu-agent-skills
+claude plugin marketplace add OWNER/mp-agent-delivery-skills
+claude plugin install delivery-skills@mp-agent-delivery-skills
 ```
 
-Panggil dengan `/pandu-skills:estimate-delivery-plan`. Claude juga memakainya otomatis jika permintaan cocok dengan `description`.
+Panggil dengan `/delivery-skills:estimate-delivery-plan`. Claude juga memakainya otomatis jika permintaan cocok dengan `description`.
 
 Auto-update mati secara default. Ambil update manual:
 
 ```bash
-claude plugin marketplace update pandu-agent-skills
-claude plugin update pandu-skills@pandu-agent-skills
+claude plugin marketplace update mp-agent-delivery-skills
+claude plugin update delivery-skills@mp-agent-delivery-skills
 ```
 
-Atau nyalakan auto-update: `/plugin` > Marketplaces > pilih `pandu-agent-skills` > Enable auto-update.
+Atau nyalakan auto-update: `/plugin` > Marketplaces > pilih `mp-agent-delivery-skills` > Enable auto-update.
 
 Ingin nama tanpa prefix (`/estimate-delivery-plan`)? Salin folder skill ke `~/.claude/skills/estimate-delivery-plan/`. Cara ini tidak dapat update otomatis.
 
@@ -57,7 +57,7 @@ Ingin nama tanpa prefix (`/estimate-delivery-plan`)? Salin folder skill ke `~/.c
 Pakai CLI `skills` (https://github.com/vercel-labs/skills). CLI ini menyalin skill ke folder yang dibaca tiap agent.
 
 ```bash
-npx skills add OWNER/pandu-agent-skills --skill estimate-delivery-plan \
+npx skills add OWNER/mp-agent-delivery-skills --skill estimate-delivery-plan \
   -a codex -a cursor -a github-copilot -a gemini-cli -g
 ```
 
