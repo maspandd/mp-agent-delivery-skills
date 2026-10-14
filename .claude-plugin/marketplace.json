@@ -1,0 +1,14 @@
+{
+  "name": "pandu-agent-skills",
+  "description": "Pandu's reusable agent skills for engineering delivery work",
+  "owner": {
+    "name": "Pandu"
+  },
+  "plugins": [
+    {
+      "name": "pandu-skills",
+      "source": "./",
+      "description": "All skills in skills/, including estimate-delivery-plan"
+    }
+  ]
+}
